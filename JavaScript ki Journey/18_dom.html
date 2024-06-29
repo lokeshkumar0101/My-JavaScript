@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript KI Journey</title>
+    
+</head>
+<body>
+   <ul class="language" style="color: black;font-size: 30px;">
+    <li>JavaScript</li>
+   </ul>
+    
+
+    <script>
+    //    function addLanguage(name){
+    //     const li = document.createElement("li")
+    //     li.innerHTML=`${name}`;
+    //     document.querySelector(".language").appendChild(li);
+    //    }
+    //    addLanguage("Java")
+    //    addLanguage("python")
+    //    addLanguage("C#")
+
+       // optmized way to append the childs
+
+       function addlang(name){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(name))
+        document.querySelector(".language").append(li)
+       }
+       addlang("Ruby")
+       addlang("C++")
+       addlang("Python")
+       addlang("Ruby")
+
+       // for edit
+
+       const secondLang = document.querySelector("li:nth-child(3)")
+       const newli = document.createElement("li")
+       newli.textContent = "Flutter"
+       secondLang.replaceWith(newli)  // replace C++ to Flutter
+       
+       // edit method 2
+
+       const dusraLang = document.querySelector("li:first-child")
+       dusraLang.outerHTML = "<li>BhaiLang</li>"  // replace JavaScript to BhaiLang
+
+       // to remove an element
+
+       const lastlang = document.querySelector("li:nth-child(5)")
+       lastlang.remove()   // remove the last element of li
+    </script>
+
+</body>
+</html>
