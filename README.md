@@ -1,2 +1,4 @@
 # My-JavaScript
-my javascript learning journey.....
+This is my javascript learning journey
+</br>
+where I learn JavaScript Basic to Advance.
